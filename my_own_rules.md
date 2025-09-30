@@ -1,192 +1,191 @@
 ##################################################################
-# 🚨 CRITICAL: DOCUMENTATION IS NON-NEGOTIABLE 🚨
-# 📁 ALWAYS CHECK FOR docs/ FOLDER FIRST
-# 📝 ALWAYS UPDATE CHANGELOG AFTER ANY CODE CHANGE
-# 🏗️ ALWAYS MAINTAIN PROJECT STRUCTURE DOCUMENTATION
+# 🚨 حاسم: التوثيق غير قابل للتفاوض 🚨
+# 📁 تحقق دائمًا من مجلد `docs/` أولاً
+# 📝 قم دائمًا بتحديث سجل التغييرات (CHANGELOG) بعد أي تغيير في الكود
+# 🏗️ حافظ دائمًا على توثيق هيكل المشروع
 ##################################################################
 
-- Always maintain a dedicated `docs/` folder at the project root containing two essential documentation files: `changelog.md` and `project_structure.md`.
-- **🔍 MANDATORY INITIAL CHECK FOR EVERY TASK/REQUEST**: Before starting any code work, task, or request, **ALWAYS** review `docs/changelog.md` and `docs/project_structure.md` to understand the current project state, history, and architecture - this is non-negotiable.
-- **🔄 IMMEDIATE SETUP**: Check if `docs/` folder exists - if not, CREATE IT IMMEDIATELY with both documentation files inside. If files exist elsewhere, move them INTO the `docs/` folder - this is MANDATORY. If files don't exist, create them inside `docs/` folder with appropriate initial content - DO THIS FIRST.
-- **🔍 DOUBLE-CHECK REQUIREMENT FOR EVERY UPDATE/TASK/REQUEST**: For EVERY single update, task, or request, the AI must:
-  - **Double-check the entire project structure** by listing directories and examining file organization
-  - **Read the complete `docs/project_structure.md`** file to understand the current documented architecture
-  - **Compare the actual project structure** with the documented structure
-  - **Check if `project_structure.md` needs updating** based on the last update or changes made - if any discrepancies are found, UPDATE IT IMMEDIATELY before proceeding
-  - **Verify changelog.md** is current and add entries for any structural changes
-  - **MANDATORY SYNC TRIGGER**: If ANY file/folder is added, deleted, moved, or renamed; or if a file’s purpose, title, or section/topic changes, you MUST update `docs/project_structure.md` IMMEDIATELY to reflect the new current architecture. Do not defer.
-- The `changelog.md` serves as a historical record of all code modifications with timestamped entries in format `# YYYY-MM-DD HH:MM` listing every modified file with descriptions.
-- The `project_structure.md` provides complete CURRENT architectural documentation including visual directory trees (📁/📄), component relationships, configuration details, and implementation guidelines.
-- **🚫 STRICT PROHIBITION**: `project_structure.md` MUST NEVER contain "## 🔍 Recent Implementations", "last updates", "recent changes", or any historical tracking sections. These belong in `changelog.md` ONLY.
-- **📋 SEPARATION OF CONCERNS**: Project structure = current architecture snapshot. Changelog = historical change log. NEVER MIX THESE RESPONSIBILITIES.
-- **🔄 UPDATE RELIGIOUSLY**: Update changelog after EVERY code change, and update `project_structure.md` on EVERY tree change (add/delete/move/rename) or role/title/section change - NO EXCEPTIONS.
-- **📋 THIS IS SACRED**: Use this documentation system for historical tracking, team onboarding, architectural reference, and maintaining project transparency - NEVER SKIP THIS.
-- **🎯 REMEMBER**: Well-documented projects are professional projects - treat documentation as important as the code itself.
-- **⚠️ FINAL WARNING**: No code changes, tasks, or requests without reviewing and updating documentation - this is not optional, it's essential!
-- **🔥 ROBUST ENFORCEMENT**: For every single task or request, the AI must confirm it has checked both `docs/changelog.md` and `docs/project_structure.md` before proceeding - no shortcuts allowed.
-- **🚫 ABSOLUTE MANDATE**: If project structure has changed, DO NOT proceed with any task until `docs/project_structure.md` is fully updated and synchronized with the actual project layout.
+- حافظ دائمًا على مجلد مخصص باسم `docs/` في جذر المشروع يحتوي على ملفي توثيق أساسيين: `changelog.md` و `project_structure.md`.
+- **🔍 فحص أولي إلزامي لكل مهمة/طلب**: قبل البدء بأي عمل برمجي، مهمة، أو طلب، **دائمًا** راجع ملفي `docs/changelog.md` و `docs/project_structure.md` لفهم حالة المشروع الحالية، تاريخه، وبنيته المعمارية - هذا غير قابل للتفاوض.
+- **🔄 إعداد فوري**: تحقق مما إذا كان مجلد `docs/` موجودًا - إذا لم يكن كذلك، **قم بإنشائه فورًا** مع كلا ملفي التوثيق بداخله. إذا كانت الملفات موجودة في مكان آخر، انقلها إلى داخل مجلد `docs/` - هذا **إلزامي**. إذا لم تكن الملفات موجودة، أنشئها داخل مجلد `docs/` بمحتوى أولي مناسب - **افعل هذا أولاً**.
+- **🔍 تدقيق مزدوج للمتطلبات لكل تحديث/مهمة/طلب**: لكل تحديث أو مهمة أو طلب فردي، يجب على الذكاء الاصطناعي:
+  - **التدقيق المزدوج لهيكل المشروع بالكامل** عن طريق سرد الدلائل وفحص تنظيم الملفات
+  - **قراءة ملف `docs/project_structure.md` بالكامل** لفهم البنية المعمارية الموثقة الحالية
+  - **مقارنة هيكل المشروع الفعلي** بالهيكل الموثق
+  - **التحقق مما إذا كان ملف `project_structure.md` يحتاج إلى تحديث** بناءً على آخر تحديث أو التغييرات التي تمت - إذا تم العثور على أي تناقضات، **قم بتحديثه فورًا** قبل المتابعة
+  - **التحقق من أن `changelog.md` مُحدَّث** وإضافة إدخالات لأي تغييرات هيكلية
+  - **مُشغِّل مزامنة إلزامي**: إذا تمت إضافة أو حذف أو نقل أو إعادة تسمية **أي** ملف/مجلد؛ أو إذا تغير الغرض من ملف، أو عنوانه، أو قسمه/موضوعه، **فيجب عليك تحديث** `docs/project_structure.md` **فورًا** ليعكس البنية المعمارية الحالية الجديدة. لا تؤجل ذلك.
+- يعمل ملف `changelog.md` كسجل تاريخي لجميع تعديلات الكود مع إدخالات مختومة زمنيًا بتنسيق `# YYYY-MM-DD HH:MM` تسرد كل ملف تم تعديله مع وصف.
+- يوفر ملف `project_structure.md` توثيقًا معماريًا حاليًا كاملاً يشمل أشجار الدلائل المرئية (📁/📄)، وعلاقات المكونات، وتفاصيل التهيئة، وإرشادات التنفيذ.
+- **🚫 حظر صارم**: يجب ألا يحتوي ملف `project_structure.md` أبدًا على "## 🔍 عمليات التنفيذ الأخيرة"، "آخر التحديثات"، أو "التغييرات الأخيرة"، أو أي أقسام تتبع تاريخية. هذه تنتمي إلى `changelog.md` **فقط**.
+- **📋 فصل الاهتمامات**: هيكل المشروع = لقطة معمارية حالية. سجل التغييرات = سجل التغييرات التاريخية. **لا تخلط أبدًا** بين هاتين المسؤوليتين.
+- **🔄 تحديث ديني**: قم بتحديث سجل التغييرات بعد **كل** تغيير في الكود، وقم بتحديث `project_structure.md` عند **كل** تغيير في الشجرة (إضافة/حذف/نقل/إعادة تسمية) أو تغيير في الدور/العنوان/القسم - **لا استثناءات**.
+- **📋 هذا مقدس**: استخدم نظام التوثيق هذا للتتبع التاريخي، وإلحاق الموظفين الجدد، والمراجع المعمارية، والحفاظ على شفافية المشروع - **لا تتخطى هذا أبدًا**.
+- **🎯 تذكر**: المشاريع الموثقة جيدًا هي مشاريع احترافية - تعامل مع التوثيق بنفس أهمية الكود نفسه.
+- **⚠️ تحذير نهائي**: لا تغييرات في الكود، مهام، أو طلبات دون مراجعة وتحديث التوثيق - هذا ليس اختياريًا، بل أساسي!
+- **🔥 إنفاذ قوي**: لكل مهمة أو طلب فردي، يجب على الذكاء الاصطناعي تأكيد أنه قد فحص كلاً من `docs/changelog.md` و `docs/project_structure.md` قبل المتابعة - لا مجال للاختصارات.
+- **🚫 تفويض مطلق**: إذا تغير هيكل المشروع، **لا تتابع** أي مهمة حتى يتم تحديث `docs/project_structure.md` ومزامنته بالكامل مع تخطيط المشروع الفعلي.
 
 ##################################################################
-# 📁 DOCUMENTATION SETUP CHECKLIST:
-# ✅ Create docs/ folder at project root
-# ✅ Create changelog.md inside docs/
-# ✅ Create project_structure.md inside docs/
-# ✅ DOUBLE-CHECK: For EVERY task/request, double-check entire project structure
-# ✅ ALWAYS READ: Read complete project_structure.md before any work
-# ✅ COMPARE & UPDATE: Compare actual structure with documentation and update if needed
-# ✅ Always review changelog.md and project_structure.md for every task/request
-# ✅ Update changelog after every code change
-# ✅ Update project structure when architecture changes
-# ✅ VERIFY SYNC: Ensure documentation matches actual project layout before proceeding
-# 🚫 NEVER include "## 🔍 Recent Implementations" or "last updates/implementations" in project_structure.md
-# 🚫 Project structure docs = CURRENT ARCHITECTURE ONLY, Changelog = HISTORICAL CHANGES ONLY
+# 📁 قائمة تدقيق إعداد التوثيق:
+# ✅ إنشاء مجلد `docs/` في جذر المشروع
+# ✅ إنشاء `changelog.md` داخل `docs/`
+# ✅ إنشاء `project_structure.md` داخل `docs/`
+# ✅ تدقيق مزدوج: لكل مهمة/طلب، تدقيق مزدوج لهيكل المشروع بالكامل
+# ✅ قراءة دائمًا: قراءة ملف `project_structure.md` بالكامل قبل أي عمل
+# ✅ مقارنة وتحديث: مقارنة الهيكل الفعلي بالتوثيق والتحديث إذا لزم الأمر
+# ✅ دائمًا مراجعة `changelog.md` و `project_structure.md` لكل مهمة/طلب
+# ✅ تحديث سجل التغييرات بعد كل تغيير في الكود
+# ✅ تحديث هيكل المشروع عند تغيير البنية المعمارية
+# ✅ التحقق من المزامنة: التأكد من أن التوثيق يطابق التخطيط الفعلي للمشروع قبل المتابعة
+# 🚫 لا تقم أبدًا بتضمين "## 🔍 عمليات التنفيذ الأخيرة" أو "آخر التحديثات/التنفيذات" في project_structure.md
+# 🚫 توثيق هيكل المشروع = البنية المعمارية الحالية فقط، سجل التغييرات = التغييرات التاريخية فقط
 ##################################################################
 
-## File Length and Structure – **🔥 CRITICAL: FILE SIZE CONTROL**
-- Never allow a file to exceed 500 lines under any circumstances.
-- If a file approaches 400 lines, **BREAK IT UP IMMEDIATELY** - this is non-negotiable.
-- Treat 1000 lines as **COMPLETELY UNACCEPTABLE** even temporarily - refactor immediately.
-- **MANDATORY ORGANIZATION**: Use folders and naming conventions to keep small files logically grouped - no exceptions.
-- **DISCIPLINE REQUIRED**: Large files are technical debt - maintain them small or face the consequences.
-- **ROBUST ENFORCEMENT**: Strictly monitor and enforce file size limits to ensure maintainability and readability.
+## طول الملف وهيكله – **🔥 حاسم: التحكم في حجم الملف**
+- لا تسمح أبدًا بتجاوز أي ملف 500 سطر تحت أي ظرف من الظروف.
+- إذا اقترب ملف من 400 سطر، **قم بتقسيمه فورًا** - هذا غير قابل للتفاوض.
+- اعتبر 1000 سطر **غير مقبول تمامًا** حتى بشكل مؤقت - قم بإعادة الهيكلة فورًا.
+- **تنظيم إلزامي**: استخدم المجلدات وتسميات التوافق لتجميع الملفات الصغيرة منطقيًا - لا استثناءات.
+- **الانضباط مطلوب**: الملفات الكبيرة هي ديون تقنية - حافظ عليها صغيرة أو واجه العواقب.
+- **إنفاذ قوي**: راقب وفرض حدود حجم الملف بدقة لضمان القابلية للصيانة والقراءة.
 
-## Object-Oriented Design – **🏗️ FOUNDATIONAL: OBJECT-ORIENTED DESIGN**
-- Every functionality **MUST** be in a dedicated class, struct, or protocol, even if it's small - no shortcuts allowed.
-- **PRIORITY: COMPOSITION OVER INHERITANCE** - Always favor composition over inheritance, but maintain object-oriented thinking religiously.
-- **REUSABILITY MANDATE**: Code must be built for reuse from day one, not just to "make it work" - this is essential.
-- **ARCHITECTURAL INTEGRITY**: Every component must follow OOP principles - this foundation cannot be compromised.
-- **ROBUST ENFORCEMENT**: Ensure all code adheres strictly to OOP principles for scalability and maintainability.
+## تصميم الكائنات الموجه (OOP) – **🏗️ تأسيسي: تصميم الكائنات الموجه**
+- **يجب** أن تكون كل وظيفة داخل فئة أو هيكل أو بروتوكول مخصص، حتى لو كان صغيرًا - لا اختصارات مسموحة.
+- **الأولوية: التركيب فوق الوراثة** - فضل دائمًا التركيب على الوراثة، ولكن حافظ على التفكير الموجه للكائنات بدقة.
+- **التزام بإعادة الاستخدام**: يجب بناء الكود لغرض إعادة الاستخدام منذ اليوم الأول، وليس فقط "لجعله يعمل" - هذا أساسي.
+- **نزاهة البنية المعمارية**: يجب أن يتبع كل مكون مبادئ OOP - لا يمكن المساس بهذا الأساس.
+- **إنفاذ قوي**: تأكد من أن جميع الأكواد تلتزم بشكل صارم بمبادئ OOP من أجل قابلية التوسع والصيانة.
 
-## Single Responsibility Principle – **🎯 NON-NEGOTIABLE: SINGLE RESPONSIBILITY**
-- Every file, class, and function **MUST** do one thing only - enforce this relentlessly.
-- If anything has multiple responsibilities, **SPLIT IT IMMEDIATELY** - no compromises on this principle.
-- **LASER FOCUS REQUIRED**: Each view, manager, or utility **MUST** be laser-focused on one concern - maintain discipline.
-- **CLARITY ENFORCEMENT**: Multiple responsibilities create confusion and bugs - eliminate them without mercy.
-- **ROBUST ENFORCEMENT**: Actively identify and resolve violations to maintain clean, focused code.
+## مبدأ المسؤولية الواحدة – **🎯 غير قابل للتفاوض: مسؤولية واحدة**
+- **يجب** أن يقوم كل ملف، فئة، ودالة بشيء واحد فقط - فرض هذا بلا هوادة.
+- إذا كان لشيء ما مسؤوليات متعددة، **قم بتقسيمه فورًا** - لا تنازلات بشأن هذا المبدأ.
+- **تركيز دقيق مطلوب**: يجب أن يكون كل عرض (View)، مدير (Manager)، أو أداة مساعدة (Utility) مركزًا بدقة على مخاوف واحدة فقط - حافظ على الانضباط.
+- **إنفاذ الوضوح**: المسؤوليات المتعددة تخلق ارتباكًا وأخطاء - تخلص منها بلا رحمة.
+- **إنفاذ قوي**: حدد وحل انتهاكات المسؤولية بنشاط للحفاظ على كود نظيف ومركّز.
 
-## Modular Design – **🧩 ESSENTIAL: MODULAR ARCHITECTURE**
-- Code **MUST** connect like Lego — interchangeable, testable, and isolated - no tight coupling allowed.
-- **REUSABILITY TEST**: Ask constantly: "Can I reuse this class in a different screen or project?" If not, **REFACTOR IT NOW**.
-- **DEPENDENCY INJECTION MANDATE**: Reduce tight coupling between components using dependency injection or protocols - this is critical.
-- **TESTABILITY REQUIREMENT**: Every component must be independently testable - design for isolation from the start.
-- **ROBUST ENFORCEMENT**: Design with modularity as a core requirement to enable flexibility and testing.
+## التصميم النمطي (الموديولاري) – **🧩 أساسي: هيكل معماري نمطي**
+- **يجب** أن يتصل الكود ببعضه كقطع الليغو — قابلة للتبديل، قابلة للاختبار، ومعزولة - لا يسمح بالاقتران الوثيق.
+- **اختبار إعادة الاستخدام**: اسأل باستمرار: "هل يمكنني إعادة استخدام هذه الفئة في شاشة أو مشروع مختلف؟" إذا كانت الإجابة لا، **أعد هيكلتها الآن**.
+- **التزام حقن التبعية (Dependency Injection)**: تقليل الاقتران الوثيق بين المكونات باستخدام حقن التبعية أو البروتوكولات - هذا أمر بالغ الأهمية.
+- **متطلبات الاختبار**: يجب أن يكون كل مكون قابلاً للاختبار بشكل مستقل - صمم للعزل من البداية.
+- **إنفاذ قوي**: صمم مع وضع النمطية كمتطلب أساسي لتمكين المرونة والاختبار.
 
-## Manager and Coordinator Patterns – **📋 MANDATORY: ARCHITECTURAL PATTERNS**
-- **ALWAYS** use ViewModel, Manager, and Coordinator naming conventions for logic separation - no exceptions.
-- **UI LOGIC → ViewModel** - This separation is sacred and must be maintained religiously.
-- **BUSINESS LOGIC → Manager** - Keep business rules isolated and pure - never mix concerns.
-- **NAVIGATION/STATE FLOW → Coordinator** - Handle navigation and state transitions properly - this pattern is essential.
-- **SEPARATION DOGMA**: Never mix views and business logic directly under any circumstances - this violation is unacceptable.
-- **ROBUST ENFORCEMENT**: Strictly enforce these patterns to ensure clean architecture and maintainability.
+## أنماط المدير والمنسق (Manager and Coordinator Patterns) – **📋 إلزامي: أنماط معمارية**
+- **دائمًا** استخدم اصطلاحات التسمية ViewModel، Manager، و Coordinator لفصل المنطق - لا استثناءات.
+- **منطق واجهة المستخدم → ViewModel** - هذا الفصل مقدس ويجب الحفاظ عليه بدقة.
+- **منطق الأعمال → Manager** - حافظ على قواعد العمل معزولة ونقية - لا تخلط الاهتمامات أبدًا.
+- **التنقل/تدفق الحالة → Coordinator** - تعامل مع التنقل وتدفقات الحالة بشكل صحيح - هذا النمط أساسي.
+- **عقيدة الفصل**: لا تخلط أبدًا بين العروض ومنطق الأعمال مباشرة تحت أي ظرف - هذا الانتهاك غير مقبول.
+- **إنفاذ قوي**: فرض هذه الأنماط بصرامة لضمان بنية نظيفة وقابلية للصيانة.
 
-## Function and Class Size – **📏 SIZE DISCIPLINE: CODE LIMITS**
-- Keep functions under 30–40 lines **AT ALL TIMES** - longer functions are forbidden.
-- If a class exceeds 200 lines, **ASSESS SPLITTING** into smaller helper classes immediately - no delays.
-- **COGNITIVE LOAD CONTROL**: Smaller functions and classes are easier to understand and maintain - enforce these limits strictly.
-- **MAINTAINABILITY MANDATE**: Large functions and classes create maintenance nightmares - keep them small religiously.
-- **ROBUST ENFORCEMENT**: Regularly audit and refactor to adhere to size constraints.
+## حجم الدالة والفئة – **📏 انضباط الحجم: حدود الكود**
+- حافظ على الدوال أقل من 30-40 سطرًا **في جميع الأوقات** - الدوال الأطول ممنوعة.
+- إذا تجاوزت الفئة 200 سطر، **قم بتقييم تقسيمها** إلى فئات مساعدة أصغر فورًا - لا تأخير.
+- **التحكم في العبء المعرفي**: الدوال والفئات الأصغر أسهل في الفهم والصيانة - فرض هذه الحدود بصرامة.
+- **التزام الصيانة**: الدوال والفئات الكبيرة تخلق كوابيس في الصيانة - اجعلها صغيرة بدقة.
+- **إنفاذ قوي**: تدقيق وإعادة هيكلة منتظمة للامتثال لقيود الحجم.
 
-## Naming and Readability – **🔤 CLARITY REQUIREMENT: DESCRIPTIVE NAMES**
-- All class, method, and variable names **MUST** be descriptive and intention-revealing - vagueness is unacceptable.
-- **FORBIDDEN TERMS**: Avoid vague names like data, info, helper, or temp **UNDER ANY CIRCUMSTANCES** - use meaningful names.
-- **SELF-DOCUMENTING CODE**: Names should reveal intent clearly - if you need comments to explain a name, the name is wrong.
-- **PROFESSIONAL STANDARDS**: Clear naming is non-negotiable - it affects code quality, maintainability, and team collaboration.
-- **ROBUST ENFORCEMENT**: Ensure all names are clear and purposeful to enhance code readability.
+## التسمية وقابلية القراءة – **🔤 متطلب الوضوح: أسماء وصفية**
+- يجب أن تكون جميع أسماء الفئات، والأساليب، والمتغيرات وصفية وتكشف عن النية - الغموض غير مقبول.
+- **المصطلحات المحظورة**: تجنب الأسماء الغامضة مثل "data" (بيانات)، "info" (معلومات)، "helper" (مساعد)، أو "temp" (مؤقت) **تحت أي ظرف من الظروف** - استخدم أسماء ذات مغزى.
+- **كود موثق ذاتيًا**: يجب أن تكشف الأسماء عن النية بوضوح - إذا كنت بحاجة إلى تعليقات لشرح اسم، فالاسم خاطئ.
+- **المعايير المهنية**: التسمية الواضحة غير قابلة للتفاوض - إنها تؤثر على جودة الكود وقابليته للصيانة وتعاون الفريق.
+- **إنفاذ قوي**: تأكد من أن جميع الأسماء واضحة وهادفة لتعزيز قابلية قراءة الكود.
 
-## Scalability Mindset – **🚀 SCALABILITY IMPERATIVE: FUTURE-PROOF DESIGN**
-- Always code as if someone else will scale this to massive proportions - design for growth from day one.
-- **EXTENSION POINTS MANDATORY**: Include extension points (e.g., protocol conformance, dependency injection) from the very beginning - this is essential.
-- **GROWTH PREPARATION**: Assume your code will need to handle 10x, 100x, or 1000x more load - architect accordingly.
-- **MAINTAINER CONSIDERATION**: Future developers will thank you for scalable architecture - or curse you if it's not.
-- **ROBUST ENFORCEMENT**: Build with scalability in mind to prevent future refactoring crises.
+## عقلية قابلية التوسع – **🚀 حتمية قابلية التوسع: تصميم مقاوم للمستقبل**
+- قم دائمًا بالبرمجة كما لو أن شخصًا آخر سيقوم بتوسيع هذا إلى أبعاد هائلة - صمم للنمو منذ اليوم الأول.
+- **نقاط التوسع إلزامية**: قم بتضمين نقاط توسع (مثل التوافق مع البروتوكول، حقن التبعية) من البداية - هذا أساسي.
+- **الاستعداد للنمو**: افترض أن الكود الخاص بك سيحتاج إلى التعامل مع 10 أضعاف، 100 ضعف، أو 1000 ضعف من الحمل - صمم معماريًا وفقًا لذلك.
+- **اعتبار القائم بالصيانة**: المطورون المستقبليون سيشكرونك على بنية قابلة للتوسع - أو سيلعنونك إذا لم تكن كذلك.
+- **إنفاذ قوي**: ابنِ مع وضع قابلية التوسع في الاعتبار لمنع أزمات إعادة الهيكلة المستقبلية.
 
-## Avoid God Classes – **🚫 FORBIDDEN: GOD CLASSES**
-- Never let one file or class hold everything (e.g., massive ViewController, ViewModel, or Service) - this is architectural sin.
-- **IMMEDIATE ACTION REQUIRED**: Split god classes into UI, State, Handlers, Networking, etc. **WITHOUT DELAY** - no compromises.
-- **CONCERN SEPARATION**: Every class must have a single, clear purpose - enforce this boundary religiously.
-- **MAINTAINABILITY PROTECTION**: God classes create maintenance nightmares - eliminate them as a priority.
-- **ROBUST ENFORCEMENT**: Proactively identify and dismantle god classes to maintain code health.
+## تجنب فئات الآلهة (God Classes) – **🚫 ممنوع: فئات الآلهة**
+- لا تسمح أبدًا لملف أو فئة واحدة بالاحتفاظ بكل شيء (مثل ViewController ضخم، ViewModel، أو خدمة) - هذا خطيئة معمارية.
+- **إجراء فوري مطلوب**: قم بتقسيم فئات الآلهة إلى واجهة مستخدم (UI)، حالة (State)، معالجات (Handlers)، شبكات (Networking)، إلخ، **دون تأخير** - لا تنازلات.
+- **فصل الاهتمامات**: يجب أن يكون لكل فئة غرض واحد وواضح - فرض هذا الحد بدقة.
+- **حماية الصيانة**: تخلق فئات الآلهة كوابيس في الصيانة - تخلص منها كأولوية.
+- **إنفاذ قوي**: تحديد وتفكيك فئات الآلهة بشكل استباقي للحفاظ على صحة الكود.
 
-## MCP Server Utilization – **🔧 MANDATORY: MCP TOOL UTILIZATION**
-- **ALWAYS** utilize available MCP (Model Context Protocol) servers and tools to enhance development capabilities - this is non-optional.
-- **UP-TO-DATE KNOWLEDGE**: Use MCP servers for retrieving current documentation, code examples, and implementation details - never rely on outdated information.
-- **SPECIALIZED DOMAINS**: Leverage MCP tools for AI, machine learning, computer vision, and other specialized areas to get current best practices - this is essential for quality.
-- **CONTEXT MAINTENANCE**: Apply MCP servers for project context, knowledge persistence, and collaboration tracking across sessions - maintain continuity.
-- **SMART SELECTION**: Choose the most appropriate MCP server based on task requirements rather than using generic approaches - precision matters.
-- **MAXIMIZE EFFICIENCY**: Use available MCP tools to accelerate development, ensure accuracy, and maintain comprehensive documentation - no shortcuts allowed.
-- **ROBUST ENFORCEMENT**: Integrate MCP tools into every relevant task for enhanced capabilities.
+## استخدام خادم MCP – **🔧 إلزامي: استخدام أداة MCP**
+- **دائمًا** استخدم خوادم وأدوات MCP (Model Context Protocol) المتاحة لتعزيز قدرات التطوير - هذا ليس اختياريًا.
+- **معرفة محدثة**: استخدم خوادم MCP لاسترداد التوثيق الحالي وأمثلة الكود وتفاصيل التنفيذ - لا تعتمد أبدًا على معلومات قديمة.
+- **مجالات متخصصة**: الاستفادة من أدوات MCP للذكاء الاصطناعي، والتعلم الآلي، والرؤية الحاسوبية، وغيرها من المجالات المتخصصة للحصول على أفضل الممارسات الحالية - هذا ضروري للجودة.
+- **الحفاظ على السياق**: تطبيق خوادم MCP لسياق المشروع، واستدامة المعرفة، وتتبع التعاون عبر الجلسات - الحفاظ على الاستمرارية.
+- **اختيار ذكي**: اختر خادم MCP الأنسب بناءً على متطلبات المهمة بدلاً من استخدام مقاربات عامة - الدقة مهمة.
+- **تعظيم الكفاءة**: استخدم أدوات MCP المتاحة لتسريع التطوير، وضمان الدقة، والحفاظ على توثيق شامل - لا اختصارات مسموحة.
+- **إنفاذ قوي**: دمج أدوات MCP في كل مهمة ذات صلة لتعزيز القدرات.
 
-## Cipher MCP Setup – **🧠 MANDATORY: ADVANCED MEMORY LAYER**
-- **ALWAYS** configure Cipher MCP server for persistent memory and knowledge graphs - this is essential for projects exceeding 200k context limits.
-- **GEMINI API INTEGRATION**: Use Gemini API as primary LLM provider for Cipher to leverage Google's advanced models:
-  - Set `GEMINI_API_KEY` environment variable with your Google AI API key
-  - Provider: `gemini` in Cipher configuration
-  - Benefits: Advanced reasoning, multimodal capabilities, cost-effective for memory operations
-- **VECTOR STORE CONFIGURATION**: Use `in-memory` vector store for local development or configure Qdrant/Milvus for production scalability.
-- **MEMORY OPERATIONS**: Leverage Cipher's built-in tools (`cipher_memory_search`, `cipher_add_node`, `cipher_search_graph`) for all knowledge persistence tasks.
-- **CONTEXT OFFLOADING**: Store project history, component relationships, and decisions in Cipher to free up context window for active coding.
-- **WORKSPACE MEMORY**: Enable team collaboration features for multi-developer environments.
-- **ROBUST ENFORCEMENT**: For any task requiring multi-session context or complex refactoring, initialize Cipher memory layer first.
+## إعداد Cipher MCP – **🧠 إلزامي: طبقة الذاكرة المتقدمة**
+- **دائمًا** قم بتهيئة خادم Cipher MCP للذاكرة المستدامة ورسوم المعرفة - هذا ضروري للمشاريع التي تتجاوز حدود السياق البالغة 200 ألف.
+- **تكامل واجهة برمجة تطبيقات Gemini**: استخدم واجهة برمجة تطبيقات Gemini كمزود LLM أساسي لـ Cipher للاستفادة من نماذج جوجل المتقدمة:
+  - قم بتعيين متغير البيئة `GEMINI_API_KEY` بمفتاح واجهة برمجة تطبيقات Google AI الخاص بك
+  - المزود: `gemini` في تهيئة Cipher
+  - الفوائد: استدلال متقدم، قدرات متعددة الوسائط، فعالية من حيث التكلفة لعمليات الذاكرة
+- **تهيئة مخزن المتجهات (Vector Store)**: استخدم مخزن المتجهات `in-memory` للتطوير المحلي أو قم بتهيئة Qdrant/Milvus لقابلية التوسع في الإنتاج.
+- **عمليات الذاكرة**: الاستفادة من الأدوات المضمنة في Cipher (`cipher_memory_search`، `cipher_add_node`، `cipher_search_graph`) لجميع مهام استدامة المعرفة.
+- **تفريغ السياق (Context Offloading)**: تخزين تاريخ المشروع، وعلاقات المكونات، والقرارات في Cipher لتحرير نافذة السياق للترميز النشط.
+- **ذاكرة مساحة العمل**: تمكين ميزات التعاون الجماعي لبيئات التطوير متعددة المطورين.
+- **إنفاذ قوي**: لأي مهمة تتطلب سياقًا متعدد الجلسات أو إعادة هيكلة معقدة، قم بتهيئة طبقة ذاكرة Cipher أولاً.
 
-## Responsive Design – **📱 UNIVERSAL: RESPONSIVE DESIGN MANDATE**
-- Design and implement applications that work seamlessly across ALL device resolutions - from mobile phones to large desktop displays.
-- **PRINCIPLES ENFORCEMENT**: Use responsive design principles with flexible layouts, scalable typography, and adaptive components - no fixed dimensions allowed.
-- **TESTING REQUIREMENT**: Test applications on multiple devices and screen resolutions to ensure consistent experience - this is mandatory quality control.
-- **MOBILE-FIRST APPROACH**: Implement mobile-first design where applicable, ensuring touch-friendly interfaces and optimal performance on smaller screens.
-- **INPUT CONSIDERATIONS**: Consider different input methods (touch, mouse, keyboard) and interaction patterns for various devices - universal accessibility required.
-- **CONSISTENCY MAINTENANCE**: Maintain design consistency and usability standards across all platforms while optimizing for each device's unique characteristics.
-- **ROBUST ENFORCEMENT**: Ensure responsive design is a core requirement for all applications.
+## التصميم المتجاوب (Responsive Design) – **📱 عالمي: حتمية التصميم المتجاوب**
+- صمم وطبق تطبيقات تعمل بسلاسة عبر **جميع** دقة الأجهزة - من الهواتف المحمولة إلى شاشات سطح المكتب الكبيرة.
+- **إنفاذ المبادئ**: استخدم مبادئ التصميم المتجاوب مع التخطيطات المرنة، والطباعة القابلة للتوسع، والمكونات التكيفية - لا يُسمح بالأبعاد الثابتة.
+- **متطلبات الاختبار**: اختبر التطبيقات على أجهزة وشاشات متعددة لضمان تجربة متسقة - هذا إجراء ضبط جودة إلزامي.
+- **نهج "الجوال أولاً"**: طبق تصميم "الجوال أولاً" حيثما ينطبق، مما يضمن واجهات سهلة الاستخدام باللمس وأداءً مثاليًا على الشاشات الأصغر.
+- **اعتبارات الإدخال**: ضع في اعتبارك طرق الإدخال المختلفة (اللمس، الماوس، لوحة المفاتيح) وأنماط التفاعل للأجهزة المختلفة - إمكانية الوصول الشامل مطلوبة.
+- **الحفاظ على الاتساق**: الحفاظ على اتساق التصميم ومعايير سهولة الاستخدام عبر جميع المنصات مع التحسين لكل خاصية فريدة للجهاز.
+- **إنفاذ قوي**: تأكد من أن التصميم المتجاوب هو متطلب أساسي لجميع التطبيقات.
 
-## Design Consistency – **🎨 SACRED: DESIGN SYSTEM ADHERENCE**
-- **ALWAYS** adhere to the project's established design system, component library, and architectural patterns - no deviations without approval.
-- **COMPONENT REUSE MANDATE**: Use existing UI components, design tokens, and styling conventions rather than creating new ones - reuse is essential.
-- **VISUAL CONSISTENCY**: Follow documented design principles and maintain visual consistency across all screens and features - this is non-negotiable.
-- **DOCUMENTATION REQUIREMENT**: Document any new components or design patterns in project structure documentation for team reference - maintain records.
-- **SEAMLESS INTEGRATION**: Ensure all new features integrate seamlessly with existing design language and user experience patterns - no fragmentation allowed.
-- **GUIDELINE ENFORCEMENT**: Avoid design fragmentation by consistently applying established visual and interaction guidelines - maintain system integrity.
-- **ROBUST ENFORCEMENT**: Strictly enforce design consistency to preserve system integrity.
+## اتساق التصميم – **🎨 مقدس: الالتزام بنظام التصميم**
+- **دائمًا** التزم بنظام التصميم الخاص بالمشروع، ومكتبة المكونات، والأنماط المعمارية - لا انحرافات بدون موافقة.
+- **التزام إعادة استخدام المكونات**: استخدم مكونات واجهة المستخدم الموجودة، ورموز التصميم، واتفاقيات التصميم بدلاً من إنشاء مكونات جديدة - إعادة الاستخدام ضرورية.
+- **الاتساق البصري**: اتبع مبادئ التصميم الموثقة وحافظ على الاتساق البصري عبر جميع الشاشات والميزات - هذا غير قابل للتفاوض.
+- **متطلبات التوثيق**: قم بتوثيق أي مكونات جديدة أو أنماط تصميم في توثيق هيكل المشروع كمرجع للفريق - احتفظ بالسجلات.
+- **التكامل السلس**: تأكد من أن الميزات الجديدة تندمج بسلاسة مع لغة التصميم الحالية وتجارب المستخدم - لا تجزئة مسموحة.
+- **إنفاذ الإرشادات**: تجنب تجزئة التصميم من خلال التطبيق المتسق لإرشادات التصميم والمرئيات والتفاعل المعمول بها - حافظ على سلامة النظام.
+- **إنفاذ قوي**: فرض اتساق التصميم بصرامة للحفاظ على نزاهة النظام.
 
-## Respectful Development – **🤝 ESSENTIAL: RESPECTFUL DEVELOPMENT PRACTICES**
-- **ALWAYS** review the `docs/changelog.md` and `docs/project_structure.md` files before making code changes - understand the project first.
-- **THOUGHTFUL MODIFICATIONS**: Make purposeful modifications that add genuine value rather than changing for the sake of changing - quality over activity.
-- **DISCIPLINED REFACTORING**: Avoid unnecessary refactoring, renaming, or restructuring unless it provides clear maintainability or functionality benefits.
-- **TEAM IMPACT CONSIDERATION**: Consider the impact of changes on other team members and project stability before implementation - collaborative thinking required.
-- **QUALITY PRIORITY**: Focus on quality over quantity - a few well-considered improvements are infinitely better than numerous superficial changes.
-- **CODEBASE RESPECT**: Respect existing codebase and design decisions unless there's a compelling reason to deviate - honor previous work and decisions.
-- **ROBUST ENFORCEMENT**: Approach every task with respect for existing work and thorough review of documentation.
+## التطوير المحترم – **🤝 أساسي: ممارسات التطوير المحترمة**
+- **دائمًا** راجع ملفي `docs/changelog.md` و `docs/project_structure.md` قبل إجراء تغييرات على الكود - افهم المشروع أولاً.
+- **تعديلات مدروسة**: قم بإجراء تعديلات هادفة تضيف قيمة حقيقية بدلاً من التغيير لمجرد التغيير - الجودة فوق النشاط.
+- **إعادة هيكلة منضبطة**: تجنب إعادة الهيكلة أو إعادة التسمية أو إعادة التنظيم غير الضرورية إلا إذا كانت توفر مزايا واضحة للصيانة أو الوظيفة.
+- **اعتبار تأثير الفريق**: ضع في اعتبارك تأثير التغييرات على أعضاء الفريق الآخرين واستقرار المشروع قبل التنفيذ - التفكير التعاوني مطلوب.
+- **أولوية الجودة**: ركز على الجودة فوق الكمية - بضع تحسينات مدروسة أفضل بلا حدود من العديد من التغييرات السطحية.
+- **احترام قاعدة الكود**: احترم قاعدة الكود الحالية وقرارات التصميم ما لم يكن هناك سبب مقنع للانحراف - أكرم العمل السابق والقرارات.
+- **إنفاذ قوي**: تعامل مع كل مهمة باحترام للعمل الحالي ومراجعة شاملة للتوثيق.
 
 ---
 
-## 🚨 **COMPREHENSIVE RULE REMINDER - NON-NEGOTIABLE** 🚨
+## 🚨 **تذكير شامل بالقواعد - غير قابل للتفاوض** 🚨
 
-**📋 BEFORE ANY TASK/REQUEST - MANDATORY CHECKLIST:**
-- ✅ **ALWAYS** DOUBLE-CHECK entire project structure by listing directories and examining file organization
-- ✅ **ALWAYS** READ complete `docs/project_structure.md` to understand current documented architecture
-- ✅ **ALWAYS** COMPARE actual project structure with documentation and UPDATE if discrepancies found
-- ✅ **ALWAYS** review `docs/changelog.md` and `docs/project_structure.md` FIRST
-- ✅ **ALWAYS** ensure `docs/` folder exists with both documentation files
-- ✅ **ALWAYS** use descriptive, meaningful names (no vague terms like "data", "info", "helper")
-- ✅ **ALWAYS** follow OOP principles with single responsibility and composition over inheritance
-- ✅ **ALWAYS** implement modular, testable, and reusable code design
-- ✅ **ALWAYS** use ViewModel/Manager/Coordinator patterns for logic separation
-- ✅ **ALWAYS** keep functions ≤30-40 lines and classes ≤200 lines
-- ✅ **ALWAYS** build with scalability and extension points in mind
-- ✅ **ALWAYS** eliminate god classes immediately upon detection
-- ✅ **ALWAYS** utilize MCP tools for current knowledge and efficiency
-- ✅ **ALWAYS** implement responsive design for all devices
-- ✅ **ALWAYS** adhere to established design systems and consistency
-- ✅ **ALWAYS** prioritize quality over quantity and respect existing work
-- ✅ **ALWAYS** update documentation after every change - NO EXCEPTIONS
+**📋 قبل أي مهمة/طلب - قائمة تحقق إلزامية:**
+- ✅ **دائماً** تدقيق مزدوج لهيكل المشروع بالكامل عن طريق سرد الدلائل وفحص تنظيم الملفات
+- ✅ **دائماً** قراءة ملف `docs/project_structure.md` بالكامل لفهم البنية المعمارية الموثقة الحالية
+- ✅ **دائماً** مقارنة هيكل المشروع الفعلي بالتوثيق والتحديث إذا وجدت تناقضات
+- ✅ **دائماً** مراجعة `docs/changelog.md` و `docs/project_structure.md` أولاً
+- ✅ **دائماً** التأكد من وجود مجلد `docs/` مع كلا ملفي التوثيق
+- ✅ **دائماً** استخدام أسماء وصفية وذات مغزى (لا لمصطلحات غامضة مثل "بيانات"، "معلومات"، "مساعد")
+- ✅ **دائماً** اتباع مبادئ OOP مع المسؤولية الواحدة والتركيب فوق الوراثة
+- ✅ **دائماً** تطبيق تصميم نمطي، قابل للاختبار، وقابل لإعادة الاستخدام
+- ✅ **دائماً** استخدام أنماط ViewModel/Manager/Coordinator لفصل المنطق
+- ✅ **دائماً** إبقاء الدوال ≤30-40 سطرًا والفئات ≤200 سطر
+- ✅ **دائماً** البناء مع وضع قابلية التوسع ونقاط التوسع في الاعتبار
+- ✅ **دائماً** التخلص الفوري من فئات الآلهة (God Classes) عند اكتشافها
+- ✅ **دائماً** الاستفادة من أدوات MCP للحصول على المعرفة الحالية والكفاءة
+- ✅ **دائماً** تطبيق تصميم متجاوب لجميع الأجهزة
+- ✅ **دائماً** الالتزام بأنظمة التصميم المعمول بها والاتساق
+- ✅ **دائماً** إعطاء الأولوية للجودة على الكمية واحترام العمل الحالي
+- ✅ **دائماً** تحديث التوثيق بعد كل تغيير في الكود - **لا استثناءات**
 
-**🔥 CORE PRINCIPLES - NEVER COMPROMISE:**
-- **Documentation is sacred** - Treat it as important as code itself
-- **Single responsibility** - Every component must have one clear purpose
-- **Modularity first** - Code must be interchangeable, testable, and isolated
-- **Size discipline** - Small files, functions, and classes only
-- **Naming clarity** - Names must reveal intent without comments
-- **Scalability mindset** - Design for 10x-1000x growth from day one
-- **Robust enforcement** - Actively monitor and resolve violations immediately
-- **Respectful development** - Honor existing work and consider team impact
+**🔥 المبادئ الأساسية - لا تنازل أبدًا:**
+- **التوثيق مقدس** - تعامل معه بنفس أهمية الكود نفسه
+- **مسؤولية واحدة** - يجب أن يكون لكل مكون غرض واحد وواضح
+- **النمطية أولاً** - يجب أن يكون الكود قابلاً للتبديل، قابلاً للاختبار، ومعزولاً
+- **انضباط الحجم** - ملفات، دوال، وفئات صغيرة فقط
+- **وضوح التسمية** - يجب أن تكشف الأسماء عن النية دون تعليقات
+- **عقلية قابلية التوسع** - صمم لنمو 10x-1000x من اليوم الأول
+- **إنفاذ قوي** - المراقبة الفعالة وحل الانتهاكات فورًا
+- **تطوير محترم** - تكريم العمل الحالي والنظر في تأثير الفريق
 
-**⚠️ FINAL WARNING:** These rules are not suggestions - they are mandatory requirements for professional, maintainable, and scalable code. Violating any rule creates technical debt and maintenance nightmares. Adhere to ALL rules RELIGIOUSLY for every task, every request, and every code change. No shortcuts allowed - quality and discipline above all!
-
+**⚠️ تحذير نهائي:** هذه القواعد ليست اقتراحات - إنها متطلبات إلزامية لكود احترافي وقابل للصيانة وقابل للتوسع. انتهاك أي قاعدة يخلق ديونًا تقنية وكوابيس صيانة. التزم **بجميع** القواعد بدقة لكل مهمة، وكل طلب، وكل تغيير في الكود. لا اختصارات مسموحة - الجودة والانضباط فوق كل شيء!
